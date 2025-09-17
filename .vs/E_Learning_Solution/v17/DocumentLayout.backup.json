@@ -1,0 +1,390 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\dtos\\coursedto\\createcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\dtos\\coursedto\\createcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\mappings\\courseprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\mappings\\courseprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\mappings\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\mappings\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\dtos\\coursedto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\dtos\\coursedto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\infrastructure\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\infrastructure\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\dtos\\userdto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\dtos\\userdto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\dtos\\userdto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\dtos\\userdto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\validator\\coursecreatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\validator\\coursecreatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\validator\\userloginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\validator\\userloginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\validator\\userregistervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\validator\\userregistervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\e_learning_backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\e_learning_backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|c:\\users\\pro7\\desktop\\new proj\\e_learning_solution\\e_learning_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6E92D42-76E7-468A-BD59-FF2127912E10}|E_Learning_Backend\\E_Learning_Backend.csproj|solutionrelative:e_learning_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Services\\CourseService.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Services\\CourseService.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Services\\CourseService.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Services\\CourseService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T12:13:51.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateCourseDto.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\DTOs\\CourseDto\\CreateCourseDto.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\DTOs\\CourseDto\\CreateCourseDto.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\DTOs\\CourseDto\\CreateCourseDto.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\DTOs\\CourseDto\\CreateCourseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T10:17:48.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CourseProfile.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Mappings\\CourseProfile.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Mappings\\CourseProfile.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Mappings\\CourseProfile.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Mappings\\CourseProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T12:26:15.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CourseDto.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\DTOs\\CourseDto\\CourseDto.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\DTOs\\CourseDto\\CourseDto.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\DTOs\\CourseDto\\CourseDto.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\DTOs\\CourseDto\\CourseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T10:16:03.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Mappings\\UserProfile.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Mappings\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Mappings\\UserProfile.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Mappings\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T09:30:11.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Services\\UserService.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Services\\UserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T06:54:58.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Program.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Program.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:09:26.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T21:03:21.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Infrastructure\\Repositories\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Infrastructure\\Repositories\\CourseRepository.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Infrastructure\\Repositories\\CourseRepository.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Infrastructure\\Repositories\\CourseRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T10:20:02.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\DTOs\\UserDTO\\UserRegisterDto.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\DTOs\\UserDTO\\UserRegisterDto.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\DTOs\\UserDTO\\UserRegisterDto.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\DTOs\\UserDTO\\UserRegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:46:15.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Entities\\Course.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Entities\\Course.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Entities\\Course.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Entities\\Course.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T09:55:24.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:04:56.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\DTOs\\UserDTO\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\DTOs\\UserDTO\\UserLoginDto.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\DTOs\\UserDTO\\UserLoginDto.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\DTOs\\UserDTO\\UserLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:45:50.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Entities\\User.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:02:34.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserLoginValidator.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Validator\\UserLoginValidator.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Validator\\UserLoginValidator.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Validator\\UserLoginValidator.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Validator\\UserLoginValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T07:20:07.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CourseCreateValidator.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Validator\\CourseCreateValidator.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Validator\\CourseCreateValidator.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Validator\\CourseCreateValidator.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Validator\\CourseCreateValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T10:29:46.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRegisterValidator.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Validator\\UserRegisterValidator.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Validator\\UserRegisterValidator.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Validator\\UserRegisterValidator.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Validator\\UserRegisterValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T07:08:38.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ICourseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Interfaces\\ICourseRepository.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Interfaces\\ICourseRepository.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Interfaces\\ICourseRepository.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Interfaces\\ICourseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T10:19:20.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\Core\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\Core\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "E_Learning_Backend\\Core\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:59:32.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "E_Learning_Backend.csproj",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\E_Learning_Backend.csproj",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\E_Learning_Backend.csproj",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\E_Learning_Backend.csproj",
+              "RelativeToolTip": "E_Learning_Backend\\E_Learning_Backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-14T14:57:49.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "E_Learning_Backend\\API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA/wCUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T08:18:34.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "E_Learning_Backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\PRO7\\Desktop\\New proj\\E_Learning_Solution\\E_Learning_Backend\\appsettings.json",
+              "RelativeToolTip": "E_Learning_Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-15T11:50:48.635Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
