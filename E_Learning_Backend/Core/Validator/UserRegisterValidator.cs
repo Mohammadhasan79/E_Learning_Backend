@@ -5,14 +5,24 @@ namespace E_Learning_Backend.Core.Validator
 {
     public class UserRegisterValidator : AbstractValidator<UserRegisterDto>
     {
-        public UserRegisterValidator() 
+        public UserRegisterValidator()
         {
-            RuleFor(x => x.FullName).NotNull().NotEmpty().WithMessage("Name requarid");
-            RuleFor(x => x.FullName).MinimumLength(5).WithMessage("Name most be 8 charactor incorrect");
-            RuleFor(x => x.UserName).NotNull().NotEmpty().MinimumLength(5).WithMessage("User Name incorrect");
-            RuleFor(x => x.Email).EmailAddress().WithMessage("check email address format");
-            RuleFor(x => x.Password).NotEmpty().MinimumLength(5).WithMessage("Check Password");
-            RuleFor(x => x.Role).NotEmpty().Must(r => r == "Student" || r == "Instructor" || r == "Admin").WithMessage("Role not exist");
+            RuleFor(x => x.FullName)
+                .NotEmpty().WithMessage("Full name is required.")
+                .MinimumLength(8).WithMessage("Full name must be at least 8 characters long.");
+
+            RuleFor(x => x.UserName)
+                .NotEmpty().WithMessage("Username is required.")
+                .MinimumLength(5).WithMessage("Username must be at least 5 characters long.");
+
+            RuleFor(x => x.Email)
+                .NotEmpty().WithMessage("Email is required.")
+                .EmailAddress().WithMessage("Invalid email address format.");
+
+            RuleFor(x => x.PasswordHash)
+                .NotEmpty().WithMessage("Password is required.")
+                .MinimumLength(5).WithMessage("Password must be at least 5 characters long.");
+
         }
     }
 }

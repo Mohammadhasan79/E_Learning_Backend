@@ -2,9 +2,8 @@
 
 namespace E_Learning_Backend.Core.Entities
 {
-    public class User : IdentityUser
+    public class User : IdentityUser//<long>
     {
         public string FullName { get; set; }
-        public string role { get; set; }
     }
 }

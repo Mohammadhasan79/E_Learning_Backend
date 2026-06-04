@@ -31,19 +31,21 @@ namespace E_Learning_Backend.Core.Services
             Course.InstructorId = instructorId;
             return await _courseRepository.AddAsync(Course);
         }
-        public async Task UpdateCourseAsync(int id , CreateCourseDto Dto)
+        public async Task<bool> UpdateCourseAsync(int id , CreateCourseDto Dto)
         {
             var Course = await _courseRepository.GetByIdAsync (id);
-            if (Course == null) throw new Exception("Course not found");
-
+            if(Course == null) return false;
             _mapper.Map(Dto, Course);
             await _courseRepository.UpdateAsync(Course);
+            return true;
         }
-        public async Task DeleteCourseAsync(int id)
+        public async Task<bool> DeleteCourseAsync(int id)
         {
             var Course = await _courseRepository.GetByIdAsync(id);
+            if (Course == null) return false;
             if (Course != null)
                 await _courseRepository.DeleteAsync(Course);
+            return true;
         }
     }
 }
