@@ -4,10 +4,10 @@ namespace E_Learning_Backend.Core.Interfaces
 {
     public interface IEnrollmentRepository
     {
-        Task<IEnumerable<Enrollment>> GetByStudentIdAsync(string studentId);
-        Task<Enrollment> GetAsync(string studentId,int courseId);
-        Task<Enrollment> AddAsync(Enrollment enrollment);
-        Task<bool> UpdateAsync(Enrollment enrollment);
-        Task<bool> DeleteAsync(Enrollment enrollment);
+        Task<List<Course>> MyCoursesAsync(string id);
+        Task AddAsync(Enrollment enrollment);
+        void Remove(Enrollment enrollment);
+        Task<bool> ExistEnrollAsync(string userId, int courseId);
+        Task<Enrollment?> GetAsync(string userId, int courseId);
     }
 }

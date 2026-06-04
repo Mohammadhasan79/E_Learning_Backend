@@ -1,4 +1,5 @@
 ﻿using E_Learning_Backend.Core.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace E_Learning_Backend.Core.Interfaces
 {
@@ -8,5 +9,6 @@ namespace E_Learning_Backend.Core.Interfaces
         Task<Content> AddAsync(Content content);
         Task<bool> UpdateAsync(Content content);
         Task<bool> DeleteAsync(Content content);
+        Task<List<Content>> GetByLessonIdAsync(int lesonId);
     }
 }

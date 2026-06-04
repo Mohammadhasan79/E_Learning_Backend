@@ -9,28 +9,28 @@ namespace E_Learning_Backend.Infrastructure.Repositories
     public class LessonRepository : ILessonRepository
     {
         private readonly AppDbContext _context;
-        private readonly IMemoryCache _memoryCache;
+        //private readonly IMemoryCache _memoryCache;
 
         public LessonRepository(AppDbContext context, IMemoryCache memoryCache)
         {
             _context = context;
-            _memoryCache = memoryCache;
+            //_memoryCache = memoryCache;
         }
         public async Task<IEnumerable<Lesson>> GetByCourseIdAsync(int courseId)
         {
-            string cacheKey = $"lessons_course_{courseId}";
-            if (_memoryCache.TryGetValue(cacheKey, out IEnumerable<Lesson> result))
-            {
-                Console.WriteLine($"[CACHE] Data for course {courseId} fetched from cache.");
-                return result;
-            }
-            Console.WriteLine($"[DB] Data for course {courseId} fetched from database.");
+            //string cacheKey = $"lessons_course_{courseId}";
+            //if (_memoryCache.TryGetValue(cacheKey, out IEnumerable<Lesson> result))
+            //{
+            //    Console.WriteLine($"[CACHE] Data for course {courseId} fetched from cache.");
+            //    return result;
+            //}
+            //Console.WriteLine($"[DB] Data for course {courseId} fetched from database.");
             var lessons = await _context.Lessons.Include(n => n.Contents).Where(n=> n.CourseId == courseId).ToListAsync();
-            _memoryCache.Set(cacheKey, lessons, new MemoryCacheEntryOptions
-            {
-                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5),
-                SlidingExpiration = TimeSpan.FromMinutes(2)
-            });
+            //_memoryCache.Set(cacheKey, lessons, new MemoryCacheEntryOptions
+            //{
+            //    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5),
+            //    SlidingExpiration = TimeSpan.FromMinutes(2)
+            //});
             return lessons;
         }
         public async Task<Lesson?> GetByIdAsync(int id)
@@ -41,7 +41,7 @@ namespace E_Learning_Backend.Infrastructure.Repositories
         {
             _context.Lessons.Add(lesson);
             await _context.SaveChangesAsync();
-            _memoryCache.Remove($"lessons_course_{lesson.CourseId}");
+            //_memoryCache.Remove($"lessons_course_{lesson.CourseId}");
             return lesson;
         }
         public async Task<bool> UpdateAsync(Lesson lesson)
@@ -49,7 +49,7 @@ namespace E_Learning_Backend.Infrastructure.Repositories
             if (lesson == null) return false;
             _context.Lessons.Update(lesson);
             var result = await _context.SaveChangesAsync();
-            _memoryCache.Remove($"lessons_course_{lesson.CourseId}");
+            //_memoryCache.Remove($"lessons_course_{lesson.CourseId}");
 
             return result > 0;
         }
@@ -57,7 +57,7 @@ namespace E_Learning_Backend.Infrastructure.Repositories
         {
             _context.Lessons.Remove(lesson);
             var result = await _context.SaveChangesAsync();
-            _memoryCache.Remove($"lessons_course_{lesson.CourseId}");
+            //_memoryCache.Remove($"lessons_course_{lesson.CourseId}");
 
             return result > 0;
         }

@@ -1,4 +1,5 @@
-﻿using E_Learning_Backend.Core.DTOs.ContentDto;
+﻿using System.Security.Claims;
+using E_Learning_Backend.Core.DTOs.ContentDto;
 using E_Learning_Backend.Core.Entities;
 using E_Learning_Backend.Core.Services;
 using E_Learning_Backend.Core.Validator;
@@ -11,6 +12,7 @@ namespace E_Learning_Backend.API.Controllers
 {
     [Route("api/course/lesson/{lessonId}/[controller]")]
     [ApiController]
+    [Authorize]
     public class ContentController : ControllerBase
     {
         private readonly ContentService _contentService;
@@ -18,9 +20,19 @@ namespace E_Learning_Backend.API.Controllers
         {
             _contentService = contentService;
         }
+
+        [HttpGet]
+        [Authorize(Roles = "Instructor,Admin")]
+        public async Task<IActionResult> GetContentbylessonIdAsync(int lessonId)
+        {
+            var content = await _contentService.GetContentByLessonIdAsync(lessonId);
+            if (content == null) return NotFound();
+            return Ok(content);
+        }
+
         [HttpGet("{id}")]
-        [AllowAnonymous]
-        public async Task<IActionResult> GetContent(int id,int lessonId)
+        [Authorize(Roles = "Instructor,Admin")]
+        public async Task<IActionResult> GetContent(int lessonId,int id)
         {
             var content = await _contentService.GetContentByIdAsync(id);
             if (content == null) return NotFound();

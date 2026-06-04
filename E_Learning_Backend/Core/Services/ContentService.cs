@@ -10,10 +10,15 @@ namespace E_Learning_Backend.Core.Services
     {
         private readonly IContentRepository _contentRepository;
         private readonly IMapper _mapper;
-        public ContentService(IContentRepository contentRepository, IMapper mapper)
+        public ContentService(IContentRepository contentRepository, IMapper mapper, IEnrollmentRepository enrollmentRepository)
         {
             _contentRepository = contentRepository;
             _mapper = mapper;
+        }
+        public async Task<List<ContentShowDto?>> GetContentByLessonIdAsync(int lessonId)
+        {
+            var content = await _contentRepository.GetByLessonIdAsync(lessonId);
+            return _mapper.Map<List<ContentShowDto?>>(content);
         }
         public async Task<ContentShowDto?> GetContentByIdAsync(int id)
         {

@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
+using E_Learning_Backend.Core.Common;
 using E_Learning_Backend.Core.DTOs.ContentDto;
 using E_Learning_Backend.Core.DTOs.LessonDto;
 using E_Learning_Backend.Core.Entities;
 using E_Learning_Backend.Core.Interfaces;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace E_Learning_Backend.Core.Services
 {
@@ -10,10 +12,22 @@ namespace E_Learning_Backend.Core.Services
     {
         private readonly ILessonRepository _lessonRepository;
         private readonly IMapper _mapper;
-        public LessonService(ILessonRepository lessonRepository,IMapper mapper)
+        private readonly IEnrollmentRepository _enrollmentRepository;
+        public LessonService(ILessonRepository lessonRepository,IMapper mapper,IEnrollmentRepository enrollmentRepository)
         {
             _lessonRepository = lessonRepository;
+            _enrollmentRepository = enrollmentRepository;
             _mapper = mapper;
+        }
+        public async Task<ResultRespons<IEnumerable<LessonDto>>> GetLessonsByCourseIdAndUserIdAsync(string userId,int courseId)
+        {
+            var isEnroll =await _enrollmentRepository.ExistEnrollAsync(userId, courseId);
+
+            if (!isEnroll)
+                return ResultRespons<IEnumerable<LessonDto>>.Fail("Forbid");
+
+            var lessons = await _lessonRepository.GetByCourseIdAsync(courseId);
+            return ResultRespons<IEnumerable<LessonDto>>.Ok(_mapper.Map<IEnumerable<LessonDto>>(lessons));
         }
         public async Task<IEnumerable<LessonDto>> GetLessonsByCourseIdAsync(int courseId)
         {

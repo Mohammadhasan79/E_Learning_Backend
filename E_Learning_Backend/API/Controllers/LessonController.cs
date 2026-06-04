@@ -1,4 +1,5 @@
-﻿using E_Learning_Backend.Core.DTOs.LessonDto;
+﻿using System.Security.Claims;
+using E_Learning_Backend.Core.DTOs.LessonDto;
 using E_Learning_Backend.Core.Services;
 using E_Learning_Backend.Core.Validator;
 using Microsoft.AspNetCore.Authorization;
@@ -9,6 +10,7 @@ namespace E_Learning_Backend.API.Controllers
 {
     [Route("api/course/{courseId}/[controller]")]
     [ApiController]
+    [Authorize]
     public class LessonController : ControllerBase
     {
         private readonly LessonService _lessonService;
@@ -16,15 +18,26 @@ namespace E_Learning_Backend.API.Controllers
         {
             _lessonService = lessonService;
         }
+
+        [HttpGet("[action]")]
+        [Authorize(Roles = "Student,Instructor,Admin")]
+        public async Task<IActionResult> GetLessonByEnroll(int courseId)
+        {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var lessons = await _lessonService.GetLessonsByCourseIdAndUserIdAsync(userId,courseId);
+            if(!lessons.Success) return NotFound(lessons);
+            return Ok(lessons);
+        }
+
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize(Roles = "Instructor,Admin")]
         public async Task<IActionResult> GetLessons(int courseId)
         {
             var lessons = await _lessonService.GetLessonsByCourseIdAsync(courseId);
             return Ok(lessons);
         }
         [HttpGet("{id}")]
-        [AllowAnonymous]
+        [Authorize(Roles = "Instructor,Admin")]
         public async Task<IActionResult> GetLesson(int id, int courseId)
         {
             var lesson = await _lessonService.GetLessonByIdAsync(id);

@@ -27,6 +27,7 @@ namespace E_Learning_Backend.API.Controllers
             return Ok(course);
         }
         [HttpGet("{id}")]
+        [Authorize(Roles = "Instructor,Admin")]
         public async Task<IActionResult> GetById(int id)
         {
             var course = await _courseService.GetCourseByIdAsync(id);
@@ -34,19 +35,20 @@ namespace E_Learning_Backend.API.Controllers
             return Ok(course);
         }
         [HttpPost]
+        [Authorize(Roles = "Instructor,Admin")]
         public async Task<IActionResult> Create([FromBody]CreateCourseDto createCourseDto)
         {
-            var validator = new CourseCreateValidator();
-            var result = validator.Validate(createCourseDto);
-            if(!result.IsValid) return BadRequest(result.Errors);
+       
             string instructorId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (instructorId == null) return Unauthorized("unauthorized");    
-                var createCourse = await _courseService.CreateCourseAsync(createCourseDto, instructorId);
-            if (createCourse == null)
+                if (instructorId == null) return Unauthorized("unauthorized");    
+            var createCourse = await _courseService.CreateCourseAsync(createCourseDto, instructorId);
+                if (createCourse == null)
                 return BadRequest("Course creation failed");
+
             return Ok(createCourse);
         }
         [HttpPut("{id}")]
+        [Authorize(Roles = "Instructor,Admin")]
         public async Task<IActionResult> Update([FromBody]CreateCourseDto updateCourseDto,int id)
         {
             var validator = new CourseCreateValidator();
@@ -57,6 +59,7 @@ namespace E_Learning_Backend.API.Controllers
             return Ok("Course Updated Successfully");
         }
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Instructor,Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var succes = await _courseService.DeleteCourseAsync(id);

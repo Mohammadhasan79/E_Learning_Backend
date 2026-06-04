@@ -5,6 +5,7 @@ using E_Learning_Backend.Core.Services;
 using E_Learning_Backend.Core.Validator;
 using E_Learning_Backend.Infrastructure.Data;
 using E_Learning_Backend.Infrastructure.Repositories;
+using E_Learning_Backend.Infrastructure.UnitOfWork;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -26,6 +27,10 @@ builder.Services.AddScoped<LessonService>();
 builder.Services.AddScoped<ILessonRepository, LessonRepository>();
 builder.Services.AddScoped<ContentService>();
 builder.Services.AddScoped<IContentRepository, ContentRepository>();
+builder.Services.AddScoped<EnrollmentService>();
+builder.Services.AddScoped<IEnrollmentRepository, 
+    EnrollmentRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(typeof(UserProfile));
 builder.Services.AddAutoMapper(typeof(CourseProfile));
 builder.Services.AddAutoMapper(typeof(LessonProfile));

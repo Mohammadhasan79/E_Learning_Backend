@@ -7,7 +7,7 @@ namespace E_Learning_Backend.Core.Validator
     {
         public ContentCreateValidator() 
         {
-            RuleFor(x => x.Type).NotEmpty().Must(x => x == "Video" || x == "PDF" || x == "Text").WithMessage("isert correct type");
+            RuleFor(x => x.Type).NotEmpty().Must(x => x == "Video" || x == "PDF" || x == "Text").WithMessage("insert correct type");
             RuleFor(x => x.Url)
             .NotEmpty()
             .Must(url => Uri.TryCreate(url, UriKind.Absolute, out _))

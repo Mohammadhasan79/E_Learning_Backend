@@ -12,6 +12,10 @@ namespace E_Learning_Backend.Infrastructure.Repositories
         {
             _context = context;
         }
+        public async Task<List<Content>> GetByLessonIdAsync(int lesonId)
+        {
+            return await _context.Contents.Where(a => a.LessonId == lesonId).ToListAsync();
+        }
         public async Task<Content?> GetByIdAsync(int id)
         {
             return await _context.Contents.FirstOrDefaultAsync(n => n.Id == id);
