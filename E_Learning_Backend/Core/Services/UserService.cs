@@ -18,7 +18,7 @@ namespace E_Learning_Backend.Core.Services
             _userRepository = userRepository;
             _mapper = mapper;
         }
-        public async Task<string> RagisterAsync(UserRegisterDto userRegisterDto)
+        public async Task<string?> RagisterAsync(UserRegisterDto userRegisterDto)
         {
 
             var user = _mapper.Map<User>(userRegisterDto);
@@ -35,7 +35,7 @@ namespace E_Learning_Backend.Core.Services
 
 
 
-        public async Task<string> LoginAsync(UserLoginDto Dto)
+        public async Task<string?> LoginAsync(UserLoginDto Dto)
         {
             var user = await _userRepository.GetByUserNameAsync(Dto.UserName);
             if (user == null)
@@ -58,8 +58,8 @@ namespace E_Learning_Backend.Core.Services
         var key = Encoding.ASCII.GetBytes("SuperSecretKeyForJWTMyProjectIsElearnforfunandmylearn");
             var claim = new List<Claim>
             {
-                            new Claim(ClaimTypes.NameIdentifier, user.Id),
-                            new Claim(ClaimTypes.Name,user.UserName),
+                            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                            new Claim(ClaimTypes.Name,user.UserName!),
                             new Claim("Display Name",user.FullName)
             };
             claim.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));

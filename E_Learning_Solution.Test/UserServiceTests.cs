@@ -8,39 +8,46 @@ using Xunit;
 
 public class UserServiceTests
 {
-    [Fact]
-    public async Task RegisterAsync_ShouldReturnUser_WhenSuccess()
+
+[Fact]
+public async Task RegisterAsync_ShouldReturnToken_WhenUserCreated()
+{
+    var repoMock = new Mock<IUserRepository>();
+
+    repoMock.Setup(r => r.AddUserAsync(It.IsAny<User>(), It.IsAny<string>()))
+            .ReturnsAsync((User u, string p) =>
+            {
+                u.Id = "1";
+                return u;
+            });
+
+    repoMock.Setup(r => r.UserRolesAsync(It.IsAny<User>()))
+            .ReturnsAsync(new List<string> { "Student" });
+
+    var mapperMock = new Mock<IMapper>();
+
+    mapperMock.Setup(m => m.Map<User>(It.IsAny<UserRegisterDto>()))
+              .Returns((UserRegisterDto dto) => new User
+              {
+                  Id = "1",
+                  FullName = dto.FullName,
+                  UserName = dto.UserName,
+                  Email = dto.Email
+              });
+
+    var service = new UserService(repoMock.Object, mapperMock.Object);
+
+    var dto = new UserRegisterDto
     {
-        // Mock repository
-        var repoMock = new Mock<IUserRepository>();
-        repoMock.Setup(r => r.AddUserAsync(It.IsAny<User>(), It.IsAny<string>()))
-                .ReturnsAsync((User u, string p) => u);
+        FullName = "Mohammad",
+        UserName = "mohammad123",
+        Email = "m@example.com",
+        PasswordHash = "123456"
+    };
 
-        // Mock mapper
-        var mapperMock = new Mock<IMapper>();
-        mapperMock.Setup(m => m.Map<User>(It.IsAny<UserRegisterDto>()))
-                  .Returns((UserRegisterDto dto) => new User
-                  {
-                      FullName = dto.FullName,
-                      UserName = dto.UserName,
-                      Email = dto.Email
-                  });
+    var token = await service.RagisterAsync(dto);
 
-        // Pass both repo and mapper
-        var service = new UserService(repoMock.Object, mapperMock.Object);
-
-        var dto = new UserRegisterDto
-        {
-            FullName = "Mohammad",
-            UserName = "mohammad123",
-            Email = "m@example.com",
-            Role = "Student",
-            Password = "123456"
-        };
-
-        var user = await service.RagisterAsync(dto);
-
-        Assert.NotNull(user);
-        Assert.Equal("Mohammad", user.FullName);
-    }
+    Assert.NotNull(token);
+    Assert.False(string.IsNullOrEmpty(token));
+}
 }

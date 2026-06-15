@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9POceOU7fLA=",
+  "dgSpecHash": "A1FkTbP2Z+Y=",
   "success": true,
   "projectFilePath": "D:\\DESKTOP\\New proj\\E_Learning_Solution\\E_Learning_Backend\\E_Learning_Backend.csproj",
   "expectedPackageFiles": [
@@ -109,8 +109,7 @@
     "C:\\Users\\Surface\\.nuget\\packages\\xunit.core\\2.9.3\\xunit.core.2.9.3.nupkg.sha512",
     "C:\\Users\\Surface\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
     "C:\\Users\\Surface\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512",
-    "C:\\Users\\Surface\\.nuget\\packages\\xunit.runner.visualstudio\\3.1.4\\xunit.runner.visualstudio.3.1.4.nupkg.sha512",
-    "C:\\Users\\Surface\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.203\\microsoft.net.sdk.compilers.toolset.9.0.203.nupkg.sha512"
+    "C:\\Users\\Surface\\.nuget\\packages\\xunit.runner.visualstudio\\3.1.4\\xunit.runner.visualstudio.3.1.4.nupkg.sha512"
   ],
   "logs": [
     {
